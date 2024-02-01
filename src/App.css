@@ -1,0 +1,100 @@
+
+.body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  background-color: darkslategray;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo{
+  height: 100%;
+  font-size: 20px;
+  color: white;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+header{
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 20px;
+}
+
+header h1{
+  font-size: 18px;
+  max-width: 500px;
+  color: white;
+}
+
+.react-logo{
+  height: 250px;
+  width: 250px;
+}
+
+.header1 {
+  display: flex;
+  margin-right: 10px;
+}
+
+.header1 .vite-logo{
+  height: 36px;
+  width: 36px;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+
+section .container{
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box{
+  background-color: lightskyblue;
+  height: 100%;
+  width: 300px;
+  margin-left: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .container .box{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}
