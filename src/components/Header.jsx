@@ -1,6 +1,6 @@
 import viteLogo from '../../public/vite.svg'
 import reactLogo from '../assets/react.svg'
-import '../../src/App.css';
+import '../App.css'
 
 function Header() {
     return(
