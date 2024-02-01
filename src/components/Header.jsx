@@ -1,9 +1,10 @@
 import viteLogo from '../../public/vite.svg'
 import reactLogo from '../assets/react.svg'
+import '../../src/App.css';
 
 function Header() {
     return(
-        <div className="header">
+        <header>
           <div className="header1">
             <div>
               <img src={viteLogo} className='vite-logo'/>
@@ -17,7 +18,7 @@ function Header() {
           <div>
             <img src={reactLogo} className="react-logo"/>
           </div>
-        </div>
+        </header>
     )
 }
 export default Header
