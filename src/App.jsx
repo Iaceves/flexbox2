@@ -1,6 +1,8 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Nav from './components/Nav' 
+import Header from './components/Header'
 
 function App() {
   
@@ -8,31 +10,14 @@ function App() {
   return (
     <>
       <div className="body">
-        <nav className="navbar">
-          <div className="logo">
-            <h1>Flex Box</h1>
-          </div>
-          <div className="nav">
-            <ul>
-              <ol>Home</ol>
-              <ol>About</ol>
-              <ol>Contact</ol>
-            </ul>
-          </div>
-        </nav>
-        <header>
-          <div className="header1">
-            <div>
-              <img src={viteLogo} className='vite-logo'/>
-            </div>
-            <div>
-              <h1>This is a project to practice my flex box in css. The goal is to practice as much needed to be good at it!</h1>
-            </div>
-          </div>
-          <div>
-            <img src={reactLogo} className="react-logo"/>
-          </div>
-        </header>
+        <div className='nav'>
+          <Nav />
+        </div>
+        
+        <div className='header'>
+          <Header />
+        </div>
+        
         <section>
           <div className='container'>
             <div className="box">
@@ -49,6 +34,7 @@ function App() {
             </div>
           </div>
         </section>
+
         <footer>
           <div>
             <h1>created by Ismael 2024</h1>
