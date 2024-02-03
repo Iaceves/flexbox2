@@ -1,8 +1,8 @@
-import '../App.css'
-import Nav from './Nav' 
-import Header from './Header'
-import Section from './Section'
-import Footer from './Footer'
+import '../App.css';
+import Nav from './Nav';
+import Header from './Header';
+import Section from './Section';
+import Footer from './Footer';
 
 function Main() {
     return(
