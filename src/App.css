@@ -25,6 +25,17 @@
   color: white;
 }
 
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover{
+  color: grey;
+  font-size: 20px;
+}
+
+
 header{
   background-color: dodgerblue;
   display: flex;
