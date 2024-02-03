@@ -10,11 +10,9 @@ function Nav() {
             <h1>Flex Box</h1>
           </div>
           <div className="nav">
-            
             <Link to='/' className='link'>Home</Link>
             <Link to='/about' className='link'>About</Link>
             <Link to='/contact' className='link'>Contact</Link>
-            
           </div>
         </div>
     )
