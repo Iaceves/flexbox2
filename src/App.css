@@ -112,6 +112,55 @@ footer a{
   color: white;
 }
 
+.box{
+  margin-top: 20px;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 380px;
+  background-color: rgb(62, 118, 175);
+  margin: 200px auto;
+}
+
+.email-input{
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.textarea-input{
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  height: 30px;
+  width: 300px;
+}
+.textarea{
+  height: 60px;
+  width: 300px;
+}
+
+.contact-container h1{
+  color: white;
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button{
+  width: 120px;
+  margin-top: 20px;
+  color: dodgerblue;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 @media (max-width: 590px) {
 
   section .container{
@@ -119,8 +168,5 @@ footer a{
     text-align: center;
   }
 
-  .box{
-    margin-top: 20px;
-  }
 
 }
