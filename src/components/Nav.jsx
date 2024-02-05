@@ -14,7 +14,11 @@ function Nav() {
             <Link to='/about' className='link'>About</Link>
             <Link to='/contact' className='link'>Contact</Link>
           </div>
+          <div>
+            <Link to='/login' className='link'>Login</Link>
+            <Link to='/signup' className='link'>Signup</Link>
+          </div>
         </div>
     )
 }
-export default Nav
+export default Nav;
