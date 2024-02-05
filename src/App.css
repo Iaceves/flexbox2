@@ -30,6 +30,8 @@ body{
 .link{
   text-decoration: none;
   color: white;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .link:hover{
@@ -112,6 +114,7 @@ footer a{
   font-size: 18px;
   font-weight: bold;
   color: white;
+  margin-left: 20px;
 }
 
 .box{
@@ -143,10 +146,12 @@ footer a{
 .input{
   height: 30px;
   width: 300px;
+  padding: 5px;
 }
 .textarea{
   height: 60px;
   width: 300px;
+  padding: 5px;
 }
 
 .contact-container h1{
