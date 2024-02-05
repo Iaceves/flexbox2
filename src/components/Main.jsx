@@ -4,9 +4,11 @@ import Header from './Header';
 import Section from './Section';
 import Footer from './Footer';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../Pages/Home'
-import About from '../Pages/About'
-import Contact from '../Pages/Contact'
+import Home from '../Pages/Home';
+import About from '../Pages/About';
+import Contact from '../Pages/Contact';
+import Login from '../Pages/Login';
+import Signup from '../Pages/Signup';
 
 function Main() {
     return(
@@ -20,6 +22,8 @@ function Main() {
           </div>
 
           <Routes>
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
             <Route path='/' element={<Home />}/>
             <Route path='/about' element={<About />}/>
             <Route path='/contact' element={<Contact />}/>
@@ -32,4 +36,4 @@ function Main() {
     )
 
 }
-export default Main
+export default Main;
