@@ -1,7 +1,21 @@
+import { useEffect, useState } from 'react'
 import '../App.css'
+import axios from 'axios'
 
 function Section() {
-    return(
+  // const [username, setusername] = useState([])
+
+
+  // useEffect(() => {
+  //   const getEmail = async () => {
+  //     const response = await (await axios.get('http://localhost:3000/user/65c1c5d135ec101f477b5594')).data.email
+  //     setusername(response)
+  //     console.log(response)
+  //   }
+  //   getEmail()
+  // }, [])
+  
+  return(
         <section>
           <div className='container'>
             <div className="box">
