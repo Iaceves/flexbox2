@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import '../App.css';
 
 function SignupPage(){
 
@@ -7,7 +8,7 @@ function SignupPage(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const navigate = useNavigate();
+     const navigate = useNavigate();
 
     function returnToLoginhandler(){
         navigate('/login')
@@ -15,13 +16,7 @@ function SignupPage(){
 
     function signupHandler(e){
         e.preventDefault()
-        console.log("I have been click!")
-    }
-
-
-    console.log(username);
-    console.log(email)
-    console.log(password)
+    }    
 
     return(
         <div className="signup-container">
