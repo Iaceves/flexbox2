@@ -14,13 +14,12 @@ function LoginPage(){
 
     function onPress(){
         console.log("I have been Click!!!")
-        console.log(email, password)
     }
 
 
     return(
         <div className='login-container'>
-            <h1>Login</h1>
+            <h1 className='h1'>Login</h1>
             <div>
                 <h1>Email:</h1>
                 <input placeholder="Email" type="text" value={email} onChange={e => setEmail(e.target.value)} />
