@@ -201,32 +201,34 @@ footer a{
   flex-direction: column;
   align-items: center;
   width: 500px;
-  height: 380px;
+  height: 390px;
   background-color: rgb(62, 118, 175);
   margin: 200px auto;
 }
 
-.email-input{
+.contact-container .h1{
+  font-size: 32px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.email-input input{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
-
-.textarea-input{
-  justify-content: center;
-  align-items: center;
-}
-
-.input{
   height: 30px;
   width: 300px;
   padding: 5px;
 }
-.textarea{
+
+.textarea-input textarea{
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: 300px;
   padding: 5px;
 }
+
 
 .contact-container h1{
   color: white;
@@ -234,12 +236,13 @@ footer a{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.button{
+.contact-container button{
   width: 120px;
   margin-top: 20px;
   color: dodgerblue;
   font-weight: bold;
   font-size: 24px;
+  margin-bottom: 24px;
 }
 
 .about-page-container{
