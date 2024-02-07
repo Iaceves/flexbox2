@@ -1,42 +1,45 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import React from "react";
-import BASE_URL from "../../global/baseURL";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import '../App.css';
 
 function SignupPage(){
-    const [signUp, setSignUp] = useState({})
 
-    useEffect(() => {
-        const signingUp = async () => {
-            const response = await (axios.post(`${BASE_URL}user`))
-            setSignUp(response)
-            console.log(response)
-        }
-        signingUp
-    },[])
+    const [username, setUserName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+     const navigate = useNavigate();
+
+    function returnToLoginhandler(){
+        navigate('/login')
+    }
+
+    function signupHandler(e){
+        e.preventDefault()
+    }    
 
     return(
         <div className="signup-container">
             <h1>Signup</h1>
             <div>
                 <h1>Username:</h1>
-                <input name='username' placeholder="username" />
+                <input name='username' placeholder="username" type='text' value={username} onChange={(e) => setUserName(e.target.value)} />
             </div>
             <div>
                 <h1>Email</h1>
-                <input name='email' placeholder="Email" />
+                <input name='email' placeholder="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div>
                 <h1>Password:</h1>
-                <input name='password' placeholder="password" />
+                <input name='password' placeholder="password" type="password" value={password} onChange={(e) => setPassword(e.target.value) }/>
             </div>
             <div>
                 <h1>Confirm Password:</h1>
                 <input name='confirmPassword' placeholder="confirm password" />
             </div>
             <div>
-                <button>Signup</button>
-                <button>Login</button>
+                <button onClick={signupHandler} >Signup</button>
+                <button onClick={returnToLoginhandler}>Login</button>
             </div>
         </div>
     )

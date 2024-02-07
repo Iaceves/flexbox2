@@ -1,9 +1,16 @@
 import { useState } from 'react';
-import '../App.css'
+import { useNavigate } from 'react-router-dom';
+import '../App.css';
 
 function LoginPage(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate();
+
+    function signupFormHandler(){
+        navigate('/signup')
+    }
 
     function onPress(){
         console.log("I have been Click!!!")
@@ -24,7 +31,7 @@ function LoginPage(){
             </div>
             <div>
                 <button onClick={onPress}>Login</button>
-                <button>Signup</button>
+                <button onClick={signupFormHandler}>Signup</button>
             </div>
         </div>
     )
