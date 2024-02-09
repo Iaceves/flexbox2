@@ -5,35 +5,35 @@ import BASE_URL from '../../global/baseURL'
 
 
 function Section() {
-  const [username, setusername] = useState([])
 
+  const [users, setUsers] = useState([])
 
   useEffect(() => {
     const getEmail = async () => {
-      const response = await (await axios.get(`${BASE_URL}user/65c1c5d135ec101f477b5594`)).data.email
-      setusername(response)
-      console.log(response)
-    }
+      try{
+        console.log('inside of section view in hook ')
+      const response = await axios.get(`${BASE_URL}users`);
+      setUsers(response.data)
+      console.log(response.data)
+      } catch(error) {
+        console.error('error fetching data:', error)
+      }
+    };
     getEmail()
-  }, [])
+  }, [setUsers])
   
   return(
-        <section>
-          <div className='container'>
-            <div className="box">
-              <h1>Title 1</h1>
-              <p>some text in title 1. & here more text</p>
-            </div>
-            <div className="box">
-              <h1>Title 2</h1>
-              <p>more text in title 2. & here more text</p>
-            </div>
-            <div className="box">
-              <h1>Title 3</h1>
-              <p>more text in title 3. & here more text</p>
-            </div>
+    <section>
+      {users.map((user) => (
+        <div className='container'>
+          <div className="box">
+            <h1>{user.email}</h1>
+            <p>some text in title 1. & here more text</p>
           </div>
-        </section>
-    )
+        </div>
+      ))
+      }
+    </section>
+  )
 }
 export default Section
