@@ -29,7 +29,10 @@ function SignupPage(){
                 console.log(response)
         }
         newUser()
-    }    
+        setUsername('')
+        setEmail('')
+        setPassword('')
+    }  
 
     return(
         <div className="signup-container">
