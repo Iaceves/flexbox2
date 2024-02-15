@@ -11,10 +11,8 @@ function Section() {
   useEffect(() => {
     const getEmail = async () => {
       try{
-        console.log('inside of section view in hook ')
       const response = await axios.get(`${BASE_URL}users`);
       setUsers(response.data)
-      console.log(response.data)
       } catch(error) {
         console.error('error fetching data:', error)
       }

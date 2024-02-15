@@ -203,11 +203,34 @@ footer a{
   width: 500px;
   height: 390px;
   background-color: rgb(62, 118, 175);
-  margin: 200px auto;
+  margin: 100px auto;
 }
 
 .contact-container .h1{
   font-size: 32px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.email-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(62, 118, 175);
+  margin: 70px auto;
+}
+
+.email-container h1{
+  font-size: 22px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.email-container p{
+  font-size: 16px;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
