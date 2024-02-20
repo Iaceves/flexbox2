@@ -171,26 +171,6 @@ section {
   color: white;
 }
 
-footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: darkslategray;
-  height: 90px;
-  width: 99%;
-  color: white;
-  position:fixed;
-  bottom: 0;
-}
-
-footer a{
-  margin-bottom: 100%;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  margin-left: 20px;
-}
-
 .box{
   margin-top: 20px;
 }
@@ -218,21 +198,30 @@ footer a{
   flex-direction: column;
   align-items: center;
   width: 500px;
-  height: 200px;
+  height: 220px;
   background-color: rgb(62, 118, 175);
-  margin: 70px auto;
+  margin:  40px auto;
 }
 
 .email-container h1{
   font-size: 22px;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: -30px;
 }
 
 .email-container p{
   font-size: 16px;
   color: white;
+  padding: 12px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.icon-container .icon{
+  color: blue;
+  margin-left: 430px;
+  margin-bottom: 50px;
+  font-size: 24px;
 }
 
 .email-input input{
@@ -296,6 +285,33 @@ footer a{
 .about-page-container h1{
   text-decoration: solid;
 }
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkslategray;
+  height: 60px;
+  width: 99%;
+  color: white;
+  position:fixed;
+  bottom: 0;
+}
+
+footer h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+footer a{
+  margin-bottom: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
+}
+
 @media (max-width: 590px) {
 
   section .container{
