@@ -29,7 +29,7 @@ function Main() {
             <Route path='/contact' element={<Contact />}/>
           </Routes>
 
-          <div className='footer'>
+          <div>
             <Footer />
           </div>
       </div>
